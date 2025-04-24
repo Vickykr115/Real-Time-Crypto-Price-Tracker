@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# 📉 Real-Time Crypto Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_PROJECT_NAME/deploys)  
+[![React](https://img.shields.io/badge/React-2025-blue?logo=react)](https://reactjs.org)
+[![Redux Toolkit](https://img.shields.io/badge/Redux--Toolkit-Modern-purple?logo=redux)](https://redux-toolkit.js.org)
+[![CoinGecko API](https://img.shields.io/badge/API-CoinGecko-green?logo=coinmarketcap)](https://www.coingecko.com/en/api)
 
-## Available Scripts
+> A responsive React + Redux Toolkit app that tracks live crypto prices using a free API and simulates real-time updates — just like CoinMarketCap!
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌐 **Deployed on Netlify**: [Click here to view the app](https://real-time-crypto-tracker1.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎥 **Demo Walkthrough (2–5 min)**: [Watch on YouTube](https://youtu.be/your-demo-link)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Objective
 
-### `npm run build`
+Build a responsive crypto tracker app using React and Redux Toolkit that:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Displays live crypto market data from CoinGecko  
+- Simulates real-time price changes using `setInterval`  
+- Manages all state globally via Redux
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Features
 
-### `npm run eject`
+- 📊 **Crypto Table**: Displays top 5 assets with full market stats  
+- 🎨 **Color-coded Changes**: Green for gain, red for loss  
+- 📈 **7D Sparkline Chart**: 7-day mini line chart  
+- 🔄 **Real-Time Simulated Updates**  
+- ⚙️ **Redux Toolkit**: Global state management  
+- 💻 **Responsive Design**  
+- ☁️ **Netlify Deployed**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Tech             | Usage                                |
+|------------------|---------------------------------------|
+| React            | Frontend Framework                    |
+| Redux Toolkit    | State Management                      |
+| CoinGecko API    | Free Crypto Market Data               |
+| Sparklines       | Tiny Line Charts                      |
+| CSS              | Responsive Styling                    |
+| Netlify          | Hosting & CI/CD                       |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧱 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+crypto-tracker/
+🔻 public/
+🔻 src/
+   🔻 App.js
+   🔻 Component/
+       └── CryptoTable.js
+   🔻 Reducer/
+       └── CryptoSlice.js
+       └── store.js    
+   🔻 styles/
+🔻 package.json
+🔻 README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📦 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/Vickykr115/Real-Time-Crypto-Price-Tracker.git
+cd crypto-price-tracker
+npm install
+npm start
+```
 
-### Analyzing the Bundle Size
+Runs at `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔄 Real-Time Sim Updates
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```js
+useEffect(() => {
+  dispatch(fetchCryptoData());
+  const interval = setInterval(() => dispatch(simulateUpdate()), 1000 + Math.random() * 1000);
+  return () => clearInterval(interval);
+}, [dispatch]);
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📤 Deploy to Netlify
 
-### Deployment
+1. Push to GitHub  
+2. Connect GitHub repo to [Netlify](https://netlify.com)  
+3. Build command: `npm run build`  
+4. Publish directory: `build`  
+5. Deploy 🎉
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🎢 Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Here's how it looks:
+
+![Demo GIF](https://your-demo-link.gif)
+
+---
+
+## 🤝 Contributing
+
+Open an issue or submit a PR 💬
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+**Made with 💻 by [Vicky Kumar](https://github.com/your-username)**
+
