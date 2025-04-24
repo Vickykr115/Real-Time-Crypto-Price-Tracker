@@ -1,6 +1,6 @@
 # 📉 Real-Time Crypto Price Tracker
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_PROJECT_NAME/deploys)  
+[![Netlify Status](https://real-time-crypto-tracker1.netlify.app/)](https://real-time-crypto-tracker1.netlify.app/)  
 [![React](https://img.shields.io/badge/React-2025-blue?logo=react)](https://reactjs.org)
 [![Redux Toolkit](https://img.shields.io/badge/Redux--Toolkit-Modern-purple?logo=redux)](https://redux-toolkit.js.org)
 [![CoinGecko API](https://img.shields.io/badge/API-CoinGecko-green?logo=coinmarketcap)](https://www.coingecko.com/en/api)
