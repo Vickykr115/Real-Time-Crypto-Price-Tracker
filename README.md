@@ -13,7 +13,7 @@
 
 🌐 **Deployed on Netlify**: [Click here to view the app](https://real-time-crypto-tracker1.netlify.app/)
 
-🎥 **Demo Walkthrough (2–5 min)**: [Watch on YouTube](https://youtu.be/your-demo-link)
+🎥 **Demo Walkthrough (2–5 min)**: [Watch on Loom](https://www.loom.com/share/313714116d8a47eaa792e77a67d48e2c?sid=e17804fc-c61d-4542-b2d3-989669a14a24)
 
 ---
 
